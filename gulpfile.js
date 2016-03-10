@@ -47,7 +47,9 @@ var gulp = require('gulp'),
 			'./src/modules/graphics/icon/*.svg'
 		],
 		move: [
-			'./src/humans.txt'
+			'./src/humans.txt',
+			// move in to directory....
+			'./src/assets/fonts/*.*'
 		],
 		img: [
 			'./src/modules/**/**/*.+(png|jpg)',

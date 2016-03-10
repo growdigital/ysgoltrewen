@@ -5,7 +5,7 @@
 /**
  * The people what made this
  * http://humanstxt.org/
- * <link type="text/plain" rel="author" href="http://penrallt.me.uk/humans.txt">
+ * <link type="text/plain" rel="author" href="http://ysgoltrewen.uk/humans.txt">
  */
 
 /* TEAM
@@ -29,4 +29,4 @@ editorconfig
 Twelve Step App
 Semantic Versioning
 Vagrant
-Normalize
+Normalize.css
