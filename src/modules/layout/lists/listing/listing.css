@@ -1,0 +1,17 @@
+/* ==========================================================================
+	 Listing
+	 ========================================================================== */
+
+/**
+ * Listing style for display of chunks in lists
+ */
+
+.listing {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.listing > * {
+	margin-bottom: 0.5em;
+}

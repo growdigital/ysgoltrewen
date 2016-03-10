@@ -1,0 +1,16 @@
+{
+	"name": "growdigital/cornerstone",
+	"description": "WordPress starter theme, modular CSS optimised with gulp",
+	"type": "wordpress-theme",
+  "minimum-stability": "stable",
+	"keywords": ["WordPress", "theme"],
+	"license": "GPL-2.0+",
+	"version": "0.0.8",
+	"authors":[
+		{
+			"name": "Jake Rayson",
+			"email": "contact@growdigital.org",
+			"homepage": "http://growdigital.org/"
+		}
+	]
+}

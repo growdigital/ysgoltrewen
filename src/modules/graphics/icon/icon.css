@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Icon
+   ========================================================================== */
+
+/**
+ * Icon.
+ * Using external SVG symbols with text fallback if no Modernizr SVG support
+ * detected.
+ */
+
+.icon {
+	display: none;
+}
+
+.svg .icon {
+  display: inline-block;
+  height: 16px;
+  line-height: 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  width: 16px;
+}
+
+.svg .icon--12 {
+  height: 12px;
+  width: 12px;
+}
+
+.svg .icon--16 {
+  height: 16px;
+  width: 16px;
+}
+
+/* Hides icon text if Modernizr inserts svg class on html tag */
+.svg .icon-hiddenvisually {
+	position: absolute !important;
+	overflow: hidden !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+}

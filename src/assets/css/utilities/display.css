@@ -1,0 +1,101 @@
+/* ==========================================================================
+	 Utilities - display
+	 ========================================================================== */
+
+/**
+ * Display utilities derived from SUIT CSS:
+ * https://github.com/suitcss/utils-display
+ */
+
+/**
+ * Display-type utilities
+ */
+
+.u-block {
+	display: block !important;
+}
+
+.u-hidden {
+	display: none !important;
+}
+
+/**
+ * Completely remove from the flow but leave available to screen readers.
+ */
+
+.u-hiddenvisually {
+	position: absolute !important;
+	overflow: hidden !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+.u-inline {
+	display: inline !important;
+}
+
+/**
+ * 1. Fix for Firefox bug: an image styled `max-width:100%` within an
+ * inline-block will display at its default size, and not limit its width to
+ * 100% of an ancestral container.
+ */
+
+.u-inlineblock {
+	display: inline-block !important;
+	max-width: 100%; /* 1 */
+}
+
+/* Clear both */
+.u-clear {
+	clear: both !important;
+}
+
+/* Hide at different viewport widths
+	 ========================================================================== */
+
+/* Hide below small width 36em */
+/*
+@include media-query(sm-max) {
+	.sm-max-hide {
+		display: none !important;
+	}
+}
+*/
+
+/* Hide between small 36em and large 62em */
+/*
+@include media-query(sm-lg) {
+	.sm-lg-plus-hide {
+		display: none !important;
+	}
+}
+*/
+
+/* Hide upto medium width 45em */
+/*
+@include media-query(md-max) {
+	.md-max-hide {
+		display: none !important;
+	}
+}
+*/
+
+/* Hide above medium 45em */
+/*
+@include media-query(md-plus) {
+	.md-plus-hide {
+		display: none !important;
+	}
+}
+*/
+
+/* Hide above large 62em */
+/*@include media-query(lg-plus) {
+	.lg-plus-hide {
+		display: none !important;
+	}
+}
+*/

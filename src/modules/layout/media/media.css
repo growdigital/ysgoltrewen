@@ -1,0 +1,29 @@
+/* ==========================================================================
+	 Media object
+	 ========================================================================== */
+
+/**
+ * The holy Media Object, creates new block formatting context for body
+ * with `overflow: hidden`
+ * Adapted from Nicole Sullivan's post
+ * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+ */
+
+.media, .media__body {
+	overflow: hidden;
+}
+
+.lt-ie7 .media, .lt-ie7 .media__body {
+	overflow: visible;
+	zoom: 1;
+}
+
+.media__img {
+	float: left;
+	margin-right: 0.5em;
+}
+
+.media__img--extend {
+	float: right;
+	margin-left: 0.5em;
+}

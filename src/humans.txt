@@ -1,0 +1,32 @@
+/* ==========================================================================
+	 humans.txt
+	 ========================================================================== */
+
+/**
+ * The people what made this
+ * http://humanstxt.org/
+ * <link type="text/plain" rel="author" href="http://penrallt.me.uk/humans.txt">
+ */
+
+/* TEAM
+	 ========================================================================== */
+
+Web stuff: Jake Rayson
+Contact: contact [at] growdigital.org
+Twitter: @growdigital
+Location: Wales, UK
+
+/* THANKS
+	 ========================================================================== */
+
+WordPress
+Roots
+BEM
+Harry Roberts
+Modernizr
+SUIT
+editorconfig
+Twelve Step App
+Semantic Versioning
+Vagrant
+Normalize

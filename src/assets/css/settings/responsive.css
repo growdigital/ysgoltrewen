@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Responsive media queries variables
+   ========================================================================== */
+
+
+
+/*
+// Define custom breakpoint sizes
+
+$small:      36em;    // 576px
+$medium-shy: 44.94em; // 719px
+$medium:     45em;    // 720px
+$large-shy:  61.94em; // 991px
+$large:      62em;    // 992px
+
+
+
+// Hold our breakpoint aliases and conditions in a list.
+//
+// These can be invoked later on via the `media-query()` mixin found in
+// `_tools.responsive`.
+
+$breakpoints: (
+		"sm-max"   "screen and (max-width: 36em)",                           // $small, maximum of
+		"sm-lg"    "screen and (min-width: 36em) and (max-width: 61.94em)",  // $small to $large-shy
+		"md-max"   "screen and (max-width: 44.94em)",                        // $medium-shy, maximum of
+		"md-lg"    "screen and (min-width: 45em) and (max-width: 61.94em)",  // $medium to $large-shy
+		"md-plus"  "screen and (min-width: 45em)",                           // $medium and up
+		"lg-max"   "screen and (max-width: 61.94em)",                        // $large-shy, maximum of
+		"lg-plus"  "screen and (min-width: 62em)",                           // $large and up
+		"retina"   "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+) !default;
+*/

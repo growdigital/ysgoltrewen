@@ -1,0 +1,29 @@
+/* ==========================================================================
+   button
+   ========================================================================== */
+
+/**
+ * button also extends to buttonising links
+ */
+
+.button {
+  /* Removes default gradient & border radius on iOS Safari */
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+/* Interactivity
+   ========================================================================== */
+
+/* Focus before hover, so that hover takes precedence */
+.button:focus {
+
+}
+
+.button:hover {
+
+}
+
+.button:active {
+
+}

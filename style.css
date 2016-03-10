@@ -1,0 +1,15 @@
+/*
+Theme Name: Cornerstone
+Theme URI: https://github.com/growdigital/cornerstone
+Author: Jake Rayson
+Author URI: http://growdigital.org/
+Description: WordPress starter theme, modular CSS optimised with gulp, based on _s
+Version: 0.0.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, fluid-layout, responsive-layout
+Text Domain: cornerstone
+*/
+
+/* Import CSS from processed & globbed CSS */
+@import 'dist/assets/css/styles.css';

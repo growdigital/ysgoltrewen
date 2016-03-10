@@ -1,0 +1,21 @@
+# Don't version the node_modules, make sure to install with `npm install`
+node_modules
+
+# Don't version dist folder
+# dist/*
+# well, in an ideal world, you shouldn't version dist folder. But this isn't
+# an ideal world, and this is the easiest way to pull in the latest version of
+# the theme
+
+# Exclude contents of tmp folder, as it's only for temp gulp files
+tmp/*
+
+# Editor project gubbins
+*.sublime-project
+*.sublime-workspace
+
+# System detritus
+._*
+.*.swp
+.DS_Store
+.log

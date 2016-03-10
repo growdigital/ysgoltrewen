@@ -1,0 +1,48 @@
+/* ==========================================================================
+   heading
+   ========================================================================== */
+
+/**
+ * h1-h4 defaults
+ * With custom .heading equivalents AKA Double Stranded Heading Hierarchy
+ * http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/#double-stranded-heading-hierarchy
+ */
+
+.heading,
+h1, h2, h3, h4 {
+	color: var(--grey_text);
+	font-weight: 600;
+	line-height: 1.1;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+}
+
+h1,
+.heading--1 {
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 1.2;
+	margin-bottom: 0.6em;
+}
+
+h2,
+.heading--2 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 0.4em;
+}
+
+h3,
+.heading--3 {
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0.2em 0;
+}
+
+h4,
+.heading--4	{
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0 0 0.5em;
+}

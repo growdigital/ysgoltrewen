@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Shameful CSS
+   ========================================================================== */
+
+/**
+ * Put shameful CSS in here. Refactor later.
+ * http://csswizardry.com/2013/04/shame-css/
+ */
+
+/* WordPress required styles, if theme submitted to WordPress Theme Directory
+   ========================================================================== */
+
+.wp-caption {
+	font-style: italic;
+}
+.wp-caption-text {
+	font-style: italic;
+}
+
+.sticky {
+	font-style: italic;
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.gallery-caption {
+	font-style: italic;
+}
+
+.bypostauthor {
+	font-style: italic;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.alignleft {
+	text-align: left;
+}
+
+.aligncenter {
+	text-align: center;
+}
