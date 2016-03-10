@@ -1,8 +1,8 @@
 <?php
 /**
- * cornerstone functions and definitions.
+ * ysgoltrewen functions and definitions.
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
- * @package cornerstone
+ * @package ysgoltrewen
  */
 
 if ( ! function_exists( 'theme_setup' ) ) :
@@ -66,18 +66,18 @@ add_action( 'after_setup_theme', 'theme_setup' );
  * Priority 0 to make it available to lower priority callbacks.
  * @global int $content_width
  */
-function cornerstone_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'cornerstone_content_width', 640 );
+function ysgoltrewen_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'ysgoltrewen_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'cornerstone_content_width', 0 );
+add_action( 'after_setup_theme', 'ysgoltrewen_content_width', 0 );
 
 /**
  * Register widget area.
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function cornerstone_widgets_init() {
+function ysgoltrewen_widgets_init() {
 	register_sidebar( array(
-		'name'          => 'cornerstone',
+		'name'          => 'ysgoltrewen',
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -86,14 +86,14 @@ function cornerstone_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'cornerstone_widgets_init' );
+add_action( 'widgets_init', 'ysgoltrewen_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function cornerstone_scripts() {
+function ysgoltrewen_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'cornerstone_scripts' );
+add_action( 'wp_enqueue_scripts', 'ysgoltrewen_scripts' );

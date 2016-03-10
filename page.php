@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages.
  * @link https://codex.wordpress.org/Template_Hierarchy
- * @package cornerstone
+ * @package ysgoltrewen
  */
 
 get_header(); ?>

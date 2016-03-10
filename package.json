@@ -1,7 +1,7 @@
 {
-	"name": "cornerstone",
-	"version": "0.0.8",
-	"description": "WordPress starter theme, modular CSS optimised with gulp",
+	"name": "ysgoltrewen-wp",
+	"version": "0.0.1",
+	"description": "WordPress theme, based on Cornerstone",
 	"main": "index.php",
 	"devDependencies": {
 		"del": "^2",
@@ -28,13 +28,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/growdigital/cornerstone"
+		"url": "https://github.com/growdigital/ysgoltrewen-wp"
 	},
 	"author": "Jake Rayson",
 	"license": "GPLv3",
 	"private": "true",
 	"bugs": {
-		"url": "https://github.com/growdigital/cornerstone/issues"
+		"url": "https://github.com/growdigital/ysgoltrewen-wp/issues"
 	},
-	"homepage": "https://github.com/growdigital/cornerstone"
+	"homepage": "https://github.com/growdigital/ysgoltrewen-wp"
 }

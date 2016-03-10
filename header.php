@@ -2,7 +2,7 @@
 /**
  * Displays all of the <head> section and everything up until <!-- site-content --> div
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- * @package cornerstone
+ * @package ysgoltrewen
  */
 ?>
 <!DOCTYPE html>
