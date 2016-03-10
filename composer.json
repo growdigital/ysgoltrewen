@@ -1,11 +1,11 @@
 {
-	"name": "growdigital/ysgoltrewen",
+	"name": "growdigital/ysgoltrewen-wp",
 	"description": "WordPress theme, based on Cornerstone",
 	"type": "wordpress-theme",
   "minimum-stability": "stable",
 	"keywords": ["WordPress", "theme"],
 	"license": "GPL-2.0+",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"authors":[
 		{
 			"name": "Jake Rayson",
