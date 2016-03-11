@@ -7,8 +7,9 @@
    * Colors
    */
 
-  --grey_text:   #333;
-  --blue_link:   #00f;
+  --grey_text:    #4a4a4a;
+  --link:         #4a90e2;
+  --link_visited: #61456a;
 
   /**
    * Text
@@ -21,10 +22,10 @@
   /* Base */
   --base_background:     white;
   --base_color:          var(--grey_text);
-  --base_fontfamily:     sans-serif;
+  --base_fontfamily:     'open_sans', sans-serif;
   --base_fontsize:       15px;
   --base_lineheight:     1.5;
-  --base_linkcolor:      var(--blue_link);
+  --base_linkcolor:      var(--link);
   --base_linkcolorhover: var(--grey_text);
 
   /* Breakpoint variables, see `/src/assets/css/settings/responsive.css` */

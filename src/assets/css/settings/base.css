@@ -56,7 +56,7 @@ a:active {
 }
 
 *:focus {
-  outline: dotted 1px var(--blue_link);
+  outline: dotted 1px var(--link);
 }
 
 blockquote, dl, dd, h1, h2, h3, h4, h5, h6, p, pre {

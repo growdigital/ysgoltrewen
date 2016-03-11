@@ -133,8 +133,8 @@ gulp.task('nodejs', function() {
 
 // Simple move task
 gulp.task('move', function() {
-	return gulp.src(paths.move)
-		.pipe(gulp.dest('./dist/'));
+  gulp.src(paths.move, { base: './src/' })
+  .pipe(gulp.dest('./dist'));
 });
 
 // Watch task
