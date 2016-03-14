@@ -6,6 +6,27 @@
  * The navigation for the whole of the site
  */
 
-.Nav {
-  
+.nav {
+	background-color: var(--yellow);
+}
+
+.nav .menu {
+	margin: 0;
+}
+
+.nav .menu > * {
+	font-size: 1.8rem;
+	list-style-type: none;
+}
+
+.nav .menu > * a,
+.nav .menu > * a:visited {
+	border-radius: 3px;
+	color: var(--grey_text);
+	text-decoration: none;
+	padding: 4px;
+}
+
+.nav .menu > * a:hover {
+	background-color: var(--yellow_pale);
 }

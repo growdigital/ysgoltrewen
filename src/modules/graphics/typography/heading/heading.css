@@ -10,7 +10,6 @@
 
 .heading,
 h1, h2, h3, h4 {
-	color: var(--grey_text);
 	font-weight: 600;
 	line-height: 1.1;
 	margin-left: 0;

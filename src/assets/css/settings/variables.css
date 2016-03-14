@@ -7,9 +7,16 @@
    * Colors
    */
 
-  --grey_text:    #4a4a4a;
-  --link:         #4a90e2;
-  --link_visited: #61456a;
+  /* Primary */
+  --red:        #b60404;
+  --yellow:     #ffb401;
+  --green:      #14a93b;
+  --grey_text:  #4a4a4a;
+  --link:       #4a90e2;
+  --link_visit: #61456a;
+
+  /* Secondary */
+  --yellow_pale: #f8c64f;
 
   /**
    * Text
