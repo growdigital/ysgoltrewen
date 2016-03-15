@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 
 	// Load plugins
+	browserSync = require('browser-sync').create(),
 	cache      = require('gulp-cached'),
 	concat     = require('gulp-concat'),
 	cssnext    = require('postcss-cssnext'),
@@ -147,6 +148,13 @@ gulp.task('watch', function() {
   livereload.listen();
 });
 
+// Browsersync task
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        proxy: "ysgoltrewen.dev"
+    });
+});
+
 // Clean task
 gulp.task('clean', function(cb) {
 	del(['./dist/assets/**/*'], cb);
@@ -161,5 +169,6 @@ gulp.task('default', [
 	'minimage',
 	'uglification',
 	'move',
-	'watch'
+	'watch',
+	'browser-sync'
 ]);

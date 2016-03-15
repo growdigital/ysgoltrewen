@@ -7,6 +7,30 @@
  */
 
 .header {
-
+	background-color: var(--red);
+	color: white;
 }
 
+.header--logo:hover {
+	opacity: 0.8;
+}
+
+.header--name {
+	font-size: 3.7rem;
+	margin: 0;
+}
+
+.header--name a,
+.header--name a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.header--name a:hover {
+	text-decoration: underline;
+}
+
+.header--desc {
+	font-weight: normal;
+	margin: 0;
+}

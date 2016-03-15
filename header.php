@@ -17,11 +17,9 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<header class="header"><!-- site-header -->
-			<div class="brand"><!-- site_branding -->
-					<a class="brand--logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri (); ?>/dist/assets/img/logo.svg" width="130" height="125" alt="Ysgol Trewen logo"></a></h1>
-					<h1 class="brand--name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2 class="brand--desc"><?php echo get_bloginfo('description');?></h2>
-			</div>
+			<a class="header--logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri (); ?>/dist/assets/img/logo.svg" width="130" height="125" alt="Ysgol Trewen logo"></a></h1>
+			<h1 class="header--name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h2 class="header--desc"><?php echo get_bloginfo('description');?></h2>
 			<nav class="nav" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav>
