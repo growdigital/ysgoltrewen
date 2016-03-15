@@ -15,18 +15,21 @@
 }
 
 .nav .menu > * {
-	font-size: 1.8rem;
+	display: inline-block;
+	font-size: 1.4rem;
 	list-style-type: none;
+	margin: 0 2px;
+	padding: 4px;
 }
 
 .nav .menu > * a,
 .nav .menu > * a:visited {
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 	color: var(--grey_text);
 	text-decoration: none;
-	padding: 4px;
 }
 
 .nav .menu > * a:hover {
-	background-color: var(--yellow_pale);
+	/*background-color: var(--yellow_pale);*/
+	color: var(--grey_dark);
 }
