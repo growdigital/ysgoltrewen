@@ -169,6 +169,5 @@ gulp.task('default', [
 	'minimage',
 	'uglification',
 	'move',
-	'watch',
-	'browser-sync'
+	'watch'
 ]);
