@@ -24,4 +24,4 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav>
 		</header>
-		<div><!-- site-content -->
+		<div class="container"><!-- site-content -->

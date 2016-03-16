@@ -16,10 +16,10 @@
 
 .nav .menu > * {
 	display: inline-block;
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	list-style-type: none;
-	margin: 0 2px;
-	padding: 4px;
+	margin: 0 3px;
+	padding: 6px;
 }
 
 .nav .menu > * a,

@@ -19,29 +19,29 @@ h1, h2, h3, h4 {
 
 h1,
 .heading--1 {
-	font-size: 30px;
+	font-size: 2rem;
 	font-weight: 300;
-	line-height: 1.2;
+	line-height: 1.1;
 	margin-bottom: 0.6em;
 }
 
 h2,
 .heading--2 {
-	font-size: 20px;
+	font-size: 1.333333333rem;
 	font-weight: 600;
 	margin-bottom: 0.4em;
 }
 
 h3,
 .heading--3 {
-	font-size: 18px;
+	font-size: 1.2rem;
 	font-weight: 600;
 	margin: 0.2em 0;
 }
 
 h4,
 .heading--4	{
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 600;
 	margin: 0 0 0.5em;
 }
