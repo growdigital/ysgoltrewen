@@ -9,9 +9,13 @@
 
 /* used on front-page, possibly for all main content areas */
 .container {
-	padding: 1rem 0.5rem;
+/*	padding: 1rem 0.5rem;
+*/}
+
+/* reset figure element */
+figure {
+	margin: 0;
+	padding: 0;
 }
 
-.page img {
-	margin: 0 -0.5rem;
-}
+

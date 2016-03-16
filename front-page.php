@@ -9,7 +9,7 @@ get_header(); ?>
 
 <main class="main" role="main">
 	<?php while (have_posts()) : the_post(); ?>
-		<article <?php post_class(); ?>>
+		<article <?php post_class(); ?> class="article">
 			<h1><?php the_title(); ?></h1>
 			<?php the_field('initial_text'); ?>
 			<?php if( have_rows('image-text') ): ?>
@@ -19,9 +19,9 @@ get_header(); ?>
 					$caption = get_sub_field('caption');
 					$text = get_sub_field('text');
 					?>
-					<figure>
+					<figure class="article__figure">
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-						<figcaption><?php echo $caption; ?></figcaption>
+						<figcaption class="article__figcaption"><?php echo $caption; ?></figcaption>
 					</figure>
 					<?php echo $text; ?>
 				<?php endwhile; ?>
