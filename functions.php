@@ -82,11 +82,95 @@ function ysgoltrewen_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
+		'before_title'  => '<h2 class="widget--title">',
 		'after_title'   => '</h2>',
 	) );
 }
 add_action( 'widgets_init', 'ysgoltrewen_widgets_init' );
+
+/**
+ * Add ACF global page
+ */
+
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page(array(
+			'page_title'	=> 'Global',
+			'menu_title'	=> 'Global',
+			'menu_slug'		=> 'global',
+			'capability'	=> '',
+			'parent_slug'	=> '',
+			'position'		=> false,
+			'icon_url'		=> false,
+			'redirect'		=> false
+		));
+
+	acf_add_options_sub_page(array(
+			'page_title'	=> 'Term dates',
+			'menu_title'	=> 'Term dates',
+			'menu_slug'		=> 'global-term-dates',
+			'capability'	=> 'edit_posts',
+			'parent_slug'	=> 'global',
+			'position'		=> false,
+			'icon_url'		=> false,
+		));
+
+	acf_add_options_sub_page(array(
+			'page_title'	=> 'School details',
+			'menu_title'	=> 'School details',
+			'menu_slug'		=> 'global-school-details',
+			'capability'	=> 'edit_posts',
+			'parent_slug'	=> 'global',
+			'position'		=> false,
+			'icon_url'		=> false,
+		));
+
+}
+
+/**
+ * Custom School details widget using info from ACF options page
+ * http://codex.wordpress.org/Widgets_API
+ */
+
+class school_widget extends WP_Widget {
+
+	/**
+	 * Setup widget name & description
+	 */
+	public function __construct() {
+		$widget_ops = array(
+			'classname' => 'school_widget',
+			'description' => 'Displays ACF global school details',
+		);
+		parent::__construct( 'school_widget', 'School details', $widget_ops );
+	}
+
+	/**
+	 * Outputs widget content
+	 */
+	public function widget( $args, $instance ) {
+		echo '<h2>School details</h2>';
+		echo the_field('address', 'option');
+		echo '<dl>';
+		echo '<dt>Telephone</dt>';
+		echo '<dd><a href="', the_field('tel_no', 'option') , '">' , the_field('tel_display', 'option') , '</a></dd>';
+		echo '<dt>Email</dt>';
+		echo '<dd><a href="mailto:', the_field('email', 'option') , '">' , the_field('email', 'option') , '</a></dd>';
+		echo '<dt>Head teacher</dt>';
+		echo '<dd>' , the_field('head_teacher', 'option') , '</dd>';
+		echo '<dt>Language</dt>';
+		echo '<dd>' , the_field('language', 'option') , '</dd>';
+		echo '<dt>Age range</dt>';
+		echo '<dd>' , the_field('age_range', 'option') , '</dd>';
+		echo '<dt>Number of pupils</dt>';
+		echo '<dd>' , the_field('number_pupils', 'option') , '</dd>';
+		echo '</dl>';
+	}
+}
+
+add_action( 'widgets_init', function(){
+	register_widget( 'school_widget' );
+});
 
 /**
  * Enqueue scripts and styles.

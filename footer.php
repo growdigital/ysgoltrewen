@@ -8,6 +8,8 @@
 ?>
 		</div><!-- /site-content -->
 		<footer role="contentinfo">
+			<p>All photographs courtesy Karen Davies © <?php echo date("Y"); ?></p>
+			<p>All content copyright © Ysgol Trewen <?php echo date("Y"); ?></p>
 			<ul>
 				<li>
 					<a href="https://twitter.com/ygtrewen">

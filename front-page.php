@@ -11,6 +11,8 @@ get_header(); ?>
 	<?php while (have_posts()) : the_post(); ?>
 		<article <?php post_class(); ?> class="article">
 			<h1><?php the_title(); ?></h1>
+			<?php the_post_thumbnail();?>
+			<p><em><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></em></p>
 			<?php the_field('initial_text'); ?>
 			<?php if( have_rows('image-text') ): ?>
 				<?php while( have_rows('image-text') ): the_row();
