@@ -9,7 +9,7 @@ get_header(); ?>
 
 <main class="main" role="main">
 	<?php while (have_posts()) : the_post(); ?>
-		<article <?php post_class(); ?> class="article">
+		<article <?php post_class('article pagepad'); ?>>
 			<h1><?php the_title(); ?></h1>
 			<?php the_post_thumbnail();?>
 			<p><em><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></em></p>
@@ -21,9 +21,9 @@ get_header(); ?>
 					$caption = get_sub_field('caption');
 					$text = get_sub_field('text');
 					?>
-					<figure class="article__figure">
+					<figure class="pagepad__figure">
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-						<figcaption class="article__figcaption"><?php echo $caption; ?></figcaption>
+						<figcaption><?php echo $caption; ?></figcaption>
 					</figure>
 					<?php echo $text; ?>
 				<?php endwhile; ?>

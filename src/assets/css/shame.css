@@ -18,4 +18,17 @@ figure {
 	padding: 0;
 }
 
+/* Page padding. Think of decent name for layout module */
+.pagepad {
+	padding: 1rem 0.5rem;
+}
 
+.pagepad__figure {
+	margin: 0 -0.5rem;
+}
+
+/* put into base */
+figcaption {
+	font-style: italic;
+	padding: 0.5rem;
+}

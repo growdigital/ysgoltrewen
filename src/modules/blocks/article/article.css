@@ -1,21 +1,10 @@
 /* ==========================================================================
-   article
+   Article
    ========================================================================== */
 
 /**
  * Article styling
  */
 
-/* TODO: how to add class to article thing? create var, echo indiv classes */
-article {
-	padding: 1rem 0.5rem;
-}
 
-.article__figure {
-	margin: 0 -0.5rem;
-}
 
-.article__figcaption {
-	font-style: italic;
-	padding: 0.5rem;
-}
