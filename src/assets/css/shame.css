@@ -32,3 +32,21 @@ figcaption {
 	font-style: italic;
 	padding: 0.5rem;
 }
+
+.deflist > * {
+	display: inline-block;
+}
+
+.deflist dt {
+	display: inline-block;
+	font-style: italic;
+	margin-right: 0.5em;
+}
+
+.deflist dd {
+	display: inline-block;
+}
+
+.container {
+	margin-bottom: 1.5rem;
+}

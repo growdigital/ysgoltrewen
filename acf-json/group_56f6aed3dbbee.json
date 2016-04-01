@@ -1,0 +1,173 @@
+{
+    "key": "group_56f6aed3dbbee",
+    "title": "Term dates",
+    "fields": [
+        {
+            "key": "field_56f64a985bbeb",
+            "label": "Term dates",
+            "name": "term_dates",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Row",
+            "sub_fields": [
+                {
+                    "key": "field_56f64b0d5bbec",
+                    "label": "Term name",
+                    "name": "term_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "html",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_56f64c145bbed",
+                    "label": "Term start",
+                    "name": "term_start",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "D j M Y",
+                    "return_format": "D j M Y",
+                    "first_day": 1
+                },
+                {
+                    "key": "field_56f64c215bbee",
+                    "label": "Half term start",
+                    "name": "half_term_start",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "D j M",
+                    "return_format": "D j M",
+                    "first_day": 1
+                },
+                {
+                    "key": "field_56f64c465bbef",
+                    "label": "Half term end",
+                    "name": "half_term_end",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "D j M",
+                    "return_format": "D j M",
+                    "first_day": 1
+                },
+                {
+                    "key": "field_56f64c555bbf0",
+                    "label": "Term end",
+                    "name": "term_end",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "D j M Y",
+                    "return_format": "D j M Y",
+                    "first_day": 1
+                }
+            ]
+        },
+        {
+            "key": "field_56fd698935c1d",
+            "label": "Inset",
+            "name": "inset",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Row",
+            "sub_fields": [
+                {
+                    "key": "field_56fd69b635c1e",
+                    "label": "Inset date",
+                    "name": "inset_date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d\/m\/Y",
+                    "return_format": "d\/m\/Y",
+                    "first_day": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "global-term-dates"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1459508057
+}

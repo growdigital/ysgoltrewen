@@ -151,19 +151,19 @@ class school_widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		echo '<h2>School details</h2>';
 		echo the_field('address', 'option');
-		echo '<dl>';
-		echo '<dt>Telephone</dt>';
-		echo '<dd><a href="', the_field('tel_no', 'option') , '">' , the_field('tel_display', 'option') , '</a></dd>';
-		echo '<dt>Email</dt>';
-		echo '<dd><a href="mailto:', the_field('email', 'option') , '">' , the_field('email', 'option') , '</a></dd>';
-		echo '<dt>Head teacher</dt>';
-		echo '<dd>' , the_field('head_teacher', 'option') , '</dd>';
-		echo '<dt>Language</dt>';
-		echo '<dd>' , the_field('language', 'option') , '</dd>';
-		echo '<dt>Age range</dt>';
-		echo '<dd>' , the_field('age_range', 'option') , '</dd>';
-		echo '<dt>Number of pupils</dt>';
-		echo '<dd>' , the_field('number_pupils', 'option') , '</dd>';
+		echo '<dl class="deflist">';
+		echo '<dt>Telephone:</dt>';
+		echo '<dd><a href="', the_field('tel_no', 'option') , '">' , the_field('tel_display', 'option') , '</a></dd><br>';
+		echo '<dt>Email:</dt>';
+		echo '<dd><a href="mailto:', the_field('email', 'option') , '">' , the_field('email', 'option') , '</a></dd><br>';
+		echo '<dt>Headteacher:</dt>';
+		echo '<dd>' , the_field('head_teacher', 'option') , '</dd><br>';
+		echo '<dt>Language:</dt>';
+		echo '<dd>' , the_field('language', 'option') , '</dd><br>';
+		echo '<dt>Age range:</dt>';
+		echo '<dd>' , the_field('age_range', 'option') , '</dd><br>';
+		echo '<dt>Number of pupils: </dt>';
+		echo '<dd>' , the_field('number_pupils', 'option') , '</dd><br>';
 		echo '</dl>';
 	}
 }

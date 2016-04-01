@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying the front page.
  * @link https://codex.wordpress.org/Template_Hierarchy
  * @package ysgoltrewen
  */
@@ -30,6 +30,20 @@ get_header(); ?>
 			<?php endif; ?>
 		</article>
 	<?php endwhile; ?>
+	<article class="article pagepad">
+		<h2>Term dates</h2>
+		<?php
+			if( have_rows('term_dates', 'option') ):
+				while ( have_rows('term_dates', 'option') ) : the_row(); ?>
+					<h3><?php the_sub_field('term_name', 'option'); ?></h3>
+					<p><?php the_sub_field('term_start', 'option'); ?><br>
+					<strong>Half term: </strong><?php the_sub_field('half_term_start', 'option'); ?> – <?php the_sub_field('half_term_end', 'option'); ?><br>
+					<?php the_sub_field('term_end', 'option'); ?></p>
+		<?php	endwhile;
+			else :
+			endif;
+		?>
+	</article>
 </main>
 
 <?php
