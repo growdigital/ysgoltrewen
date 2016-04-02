@@ -50,3 +50,12 @@ figcaption {
 .container {
 	margin-bottom: 1.5rem;
 }
+
+.media__body {
+	margin-bottom: 1rem;
+}
+
+.zero {
+	margin: 0;
+	padding: 0;
+}
