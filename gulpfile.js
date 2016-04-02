@@ -22,6 +22,7 @@ var gulp = require('gulp'),
 	paths = {
 		css: [
 			'./src/assets/css/settings/variables.css',
+			'./src/assets/css/settings/responsive.css',
 			'./src/node_modules/normalize-css/normalize.css',
 			'./src/assets/css/settings/base.css',
 			'./src/modules/**/**/*.css',

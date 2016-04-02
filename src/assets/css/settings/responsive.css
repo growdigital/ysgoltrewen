@@ -2,7 +2,7 @@
    Responsive media queries variables
    ========================================================================== */
 
-
+@custom-media --medium (width >= 45em);
 
 /*
 // Define custom breakpoint sizes
