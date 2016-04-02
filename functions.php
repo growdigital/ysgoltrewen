@@ -106,6 +106,16 @@ if( function_exists('acf_add_options_page') ) {
 		));
 
 	acf_add_options_sub_page(array(
+			'page_title'	=> 'School details',
+			'menu_title'	=> 'School details',
+			'menu_slug'		=> 'global-school-details',
+			'capability'	=> 'edit_posts',
+			'parent_slug'	=> 'global',
+			'position'		=> false,
+			'icon_url'		=> false,
+		));
+
+	acf_add_options_sub_page(array(
 			'page_title'	=> 'Term dates',
 			'menu_title'	=> 'Term dates',
 			'menu_slug'		=> 'global-term-dates',
@@ -115,15 +125,6 @@ if( function_exists('acf_add_options_page') ) {
 			'icon_url'		=> false,
 		));
 
-	acf_add_options_sub_page(array(
-			'page_title'	=> 'School details',
-			'menu_title'	=> 'School details',
-			'menu_slug'		=> 'global-school-details',
-			'capability'	=> 'edit_posts',
-			'parent_slug'	=> 'global',
-			'position'		=> false,
-			'icon_url'		=> false,
-		));
 
 }
 
