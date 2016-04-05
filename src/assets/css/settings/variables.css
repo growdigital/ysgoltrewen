@@ -31,7 +31,7 @@
   --base_background:     white;
   --base_color:          var(--grey_text);
   --base_fontfamily:     'open_sans', sans-serif;
-  --base_fontsize:       15px;
+  --base_fontsize:       16px;
   --base_lineheight:     1.5;
   --base_linkcolor:      var(--link);
   --base_linkcolorhover: var(--grey_text);

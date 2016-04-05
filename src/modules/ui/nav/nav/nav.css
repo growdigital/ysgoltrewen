@@ -8,6 +8,7 @@
 
 .nav {
 	background-color: var(--yellow);
+	margin-bottom: 1rem;
 }
 
 .nav .menu {
@@ -24,12 +25,11 @@
 
 .nav .menu > * a,
 .nav .menu > * a:visited {
-	/*border-radius: 3px;*/
 	color: var(--grey_text);
 	text-decoration: none;
 }
 
-.nav .menu > * a:hover {
-	/*background-color: var(--yellow_pale);*/
+.nav .menu > * a:hover,
+.nav .menu > * a:active {
 	color: var(--grey_dark);
 }

@@ -2,21 +2,19 @@ var gulp = require('gulp'),
 
 	// Load plugins
 	browserSync = require('browser-sync').create(),
-	cache      = require('gulp-cached'),
-	concat     = require('gulp-concat'),
-	cssnext    = require('postcss-cssnext'),
-	del        = require('del'),
-	minifyCSS  = require('gulp-cssnano'),
-	minifyHTML = require('gulp-htmlmin'),
-	imagemin   = require('gulp-imagemin'),
-	livereload = require('gulp-livereload'),
-	postcss    = require('gulp-postcss'),
-	rename     = require('gulp-rename'),
-	svg2png    = require('gulp-svg2png'),
-	svgmin     = require('gulp-svgmin'),
-	svgSprite  = require('gulp-svg-sprite'),
-	uglify     = require('gulp-uglify'),
-	watch      = require('gulp-watch'),
+	cache      	= require('gulp-cached'),
+	concat     	= require('gulp-concat'),
+	cssnext    	= require('postcss-cssnext'),
+	del        	= require('del'),
+	minifyCSS  	= require('gulp-cssnano'),
+	minifyHTML 	= require('gulp-htmlmin'),
+	imagemin   	= require('gulp-imagemin'),
+	postcss    	= require('gulp-postcss'),
+	rename     	= require('gulp-rename'),
+	svg2png    	= require('gulp-svg2png'),
+	svgmin     	= require('gulp-svgmin'),
+	uglify     	= require('gulp-uglify'),
+	watch      	= require('gulp-watch'),
 
 	// Define paths. The order is important.
 	paths = {
@@ -83,20 +81,6 @@ gulp.task('svgo', function() {
 		.pipe(gulp.dest('./dist/assets/img/'));
 });
 
-// SVG sprite
-gulp.task('sprite', function () {
-	return gulp.src(paths.icons)
-		.pipe(svgSprite({
-			mode : {
-				symbol : {
-					dest : ".",
-          sprite : "symbols.svg"
-				}
-			}
-		}))
-		.pipe(gulp.dest("./dist/assets/img"))
-});
-
 // SVG to PNG task
 gulp.task('svg2png', function() {
 	return gulp.src(paths.svg)
@@ -144,9 +128,7 @@ gulp.task('watch', function() {
 	gulp.watch(paths.css, ['css']);
 	gulp.watch(paths.js, ['uglification']);
 	gulp.watch(paths.svg, ['svg2png','svgo']);
-	gulp.watch(paths.icon, ['sprite']);
 	gulp.watch(paths.img, ['minimage']);
-  livereload.listen();
 });
 
 // Browsersync task
@@ -154,6 +136,9 @@ gulp.task('browser-sync', function() {
     browserSync.init({
         proxy: "ysgoltrewen.dev"
     });
+    browserSync({
+  	  files: "./dist/assets/css/style.css"
+		});
 });
 
 // Clean task
@@ -164,7 +149,6 @@ gulp.task('clean', function(cb) {
 // Default task
 gulp.task('default', [
 	'css',
-	'sprite',
 	'svgo',
 	'svg2png',
 	'minimage',

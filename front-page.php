@@ -7,13 +7,13 @@
 
 get_header(); ?>
 
+<?php while (have_posts()) : the_post(); ?>
+	<h1 class="pagepad"><?php the_title(); ?></h1>
+<?php endwhile; ?>
+
 <main class="main" role="main">
 	<?php while (have_posts()) : the_post(); ?>
 		<article <?php post_class('article pagepad'); ?>>
-			<h1><?php the_title(); ?></h1>
-			<?php the_post_thumbnail();?>
-			<p><em><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></em></p>
-			<?php the_field('initial_text'); ?>
 			<?php if( have_rows('image-text') ): ?>
 				<?php while( have_rows('image-text') ): the_row();
 					// vars
@@ -23,9 +23,14 @@ get_header(); ?>
 					?>
 					<figure class="pagepad__figure">
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-						<figcaption><?php echo $caption; ?></figcaption>
+						<figcaption class="pagepad__figcaption"><?php echo $caption; ?></figcaption>
 					</figure>
-					<?php echo $text; ?>
+					<?php
+					if( $text ) {
+					    echo $text;
+					}
+					else {}
+					?>
 				<?php endwhile; ?>
 			<?php endif; ?>
 		</article>

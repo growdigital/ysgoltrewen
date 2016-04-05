@@ -7,10 +7,7 @@
  * http://csswizardry.com/2013/04/shame-css/
  */
 
-/* used on front-page, possibly for all main content areas */
-.container {
-/*	padding: 1rem 0.5rem;
-*/}
+
 
 /* reset figure element */
 figure {
@@ -18,23 +15,55 @@ figure {
 	padding: 0;
 }
 
-/* Page padding. Think of decent name for layout module */
+/* Page padding. Think of decent name for layout module. or use global css rule > * */
 .pagepad {
-	padding: 1rem 0.5rem;
+	padding: 0 .5rem;
 }
 
+/* instead of .pagepad */
+/*.main > * {
+	padding: 0 .5rem;
+}
+*/
 .pagepad__figure {
-	margin: 0 -0.5rem;
+	margin: .3rem -.5rem 0;
+}
+
+
+
+/* No top margin for first figure in article */
+.pagepad__figure:first-child {
+	margin-top: 0;
+}
+
+.pagepad__figcaption {
+	padding: 0.5rem;
+}
+
+
+@media (--medium) {
+	.pagepad {
+		/*padding: 0;*/
+	}
+
+	.pagepad__figure {
+		margin: 1.3rem 0 0;
+	}
+
+		.pagepad__figcaption {
+			padding: 0rem;
+	}
 }
 
 /* put into base */
 figcaption {
 	font-style: italic;
-	padding: 0.5rem;
+	margin: 0.5rem 0;
 }
 
 .deflist > * {
 	display: inline-block;
+	line-height: 1.8;
 }
 
 .deflist dt {
@@ -62,7 +91,22 @@ figcaption {
 
 @media (--medium) {
 	body {
-		/*color: red;*/
-		font-size: 20px;
+		/*font-size: 20px;*/
+	}
+	.main {
+		float: left;
+		padding: 0.7rem;
+		width: 68%;
+	}
+	.sidebar {
+		float: right;
+		width: 30%;
 	}
 }
+
+/* not sure I want to use */
+/*.nav .menu .current-menu-item a {
+	color: var(--grey_dark);
+	cursor: default;
+}
+*/
