@@ -7,7 +7,9 @@
  * http://csswizardry.com/2013/04/shame-css/
  */
 
-
+.container {
+	padding: 0 0.7rem;
+}
 
 /* reset figure element */
 figure {
@@ -15,43 +17,32 @@ figure {
 	padding: 0;
 }
 
-/* Page padding. Think of decent name for layout module. or use global css rule > * */
-.pagepad {
-	padding: 0 .5rem;
+.container__full {
+	margin: 1.2rem -0.7rem 0.5rem;
 }
-
-/* instead of .pagepad */
-/*.main > * {
-	padding: 0 .5rem;
-}
-*/
-.pagepad__figure {
-	margin: .3rem -.5rem 0;
-}
-
-
 
 /* No top margin for first figure in article */
-.pagepad__figure:first-child {
+.container__full:first-child {
 	margin-top: 0;
 }
 
-.pagepad__figcaption {
-	padding: 0.5rem;
+.container__full-indent {
+	padding: 0 0.7rem;
 }
 
-
 @media (--medium) {
-	.pagepad {
+	.container {
 		/*padding: 0;*/
 	}
 
-	.pagepad__figure {
-		margin: 1.3rem 0 0;
+	.container__full {
+		margin-left: 0;
+		margin-right: 0;
 	}
 
-		.pagepad__figcaption {
-			padding: 0rem;
+	.container__full-indent {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -89,18 +80,26 @@ figcaption {
 	padding: 0;
 }
 
+.main {
+	border-bottom: 1px solid rgb(215, 215, 215);
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+}
+
 @media (--medium) {
 	body {
 		/*font-size: 20px;*/
 	}
 	.main {
+		border-bottom: none;
 		float: left;
-		padding: 0.7rem;
-		width: 68%;
+		width: 70%;
+		background: yellow;
 	}
 	.sidebar {
 		float: right;
 		width: 30%;
+		background: navajowhite;
 	}
 }
 
@@ -110,3 +109,4 @@ figcaption {
 	cursor: default;
 }
 */
+

@@ -8,12 +8,12 @@
 get_header(); ?>
 
 <?php while (have_posts()) : the_post(); ?>
-	<h1 class="pagepad"><?php the_title(); ?></h1>
+	<h1><?php the_title(); ?></h1>
 <?php endwhile; ?>
 
 <main class="main" role="main">
 	<?php while (have_posts()) : the_post(); ?>
-		<article <?php post_class('article pagepad'); ?>>
+		<article <?php post_class('article'); ?>>
 			<?php if( have_rows('image-text') ): ?>
 				<?php while( have_rows('image-text') ): the_row();
 					// vars
@@ -21,9 +21,9 @@ get_header(); ?>
 					$caption = get_sub_field('caption');
 					$text = get_sub_field('text');
 					?>
-					<figure class="pagepad__figure">
+					<figure class="container__full">
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-						<figcaption class="pagepad__figcaption"><?php echo $caption; ?></figcaption>
+						<figcaption class="container__full-indent"><?php echo $caption; ?></figcaption>
 					</figure>
 					<?php
 					if( $text ) {
@@ -35,7 +35,7 @@ get_header(); ?>
 			<?php endif; ?>
 		</article>
 	<?php endwhile; ?>
-	<article class="article pagepad">
+	<article class="article">
 		<h2>Term dates</h2>
 		<?php
 			if( have_rows('term_dates', 'option') ):
