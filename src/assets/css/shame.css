@@ -140,6 +140,16 @@ figcaption {
 	.deflist br {
 		display: none;
 	}
+
+	.footer__contact {
+		padding: 1rem 6rem;
+	}
+
+	.footer__contact > * {
+		display: inline-block;
+		margin: 0 0.3rem;
+	}
+
 }
 
 /* not sure I want to use */
