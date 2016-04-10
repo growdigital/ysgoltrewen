@@ -100,7 +100,7 @@ if( function_exists('acf_add_options_page') ) {
 			'menu_slug'		=> 'global',
 			'capability'	=> '',
 			'parent_slug'	=> '',
-			'position'		=> false,
+			'position'		=> '30.1',
 			'icon_url'		=> false,
 			'redirect'		=> false
 		));
