@@ -103,7 +103,6 @@ figcaption {
 	}
 
 	.header {
-		align-items: center;
 		display: flex;
 		text-align: left;
 		justify-content: center;
