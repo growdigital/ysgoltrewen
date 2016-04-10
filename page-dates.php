@@ -7,12 +7,13 @@
 
 get_header(); ?>
 
-<main role="main">
+<?php while (have_posts()) : the_post(); ?>
+	<h1><?php the_title(); ?></h1>
+<?php endwhile; ?>
+
+<main class="main" role="main">
 	<?php while (have_posts()) : the_post(); ?>
-		<article <?php post_class('article pagepad'); ?>>
-			<h1><?php the_title(); ?></h1>
-			<?php the_post_thumbnail();?>
-			<?php the_field('initial_text'); ?>
+		<article <?php post_class('article'); ?>>
 			<?php if( have_rows('image-text') ): ?>
 				<?php while( have_rows('image-text') ): the_row();
 					// vars
@@ -20,9 +21,9 @@ get_header(); ?>
 					$caption = get_sub_field('caption');
 					$text = get_sub_field('text');
 					?>
-					<figure class="pagepad__figure">
+					<figure class="container__full">
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-						<figcaption><?php echo $caption; ?></figcaption>
+						<figcaption class="container__full-indent"><?php echo $caption; ?></figcaption>
 					</figure>
 					<?php echo $text; ?>
 				<?php endwhile; ?>
@@ -30,7 +31,7 @@ get_header(); ?>
 		</article>
 	<?php endwhile; ?>
 
-		<section class="pagepad">
+		<section>
 			<h2>Term dates</h2>
 			<?php
 				if( have_rows('term_dates', 'option') ):
@@ -44,7 +45,7 @@ get_header(); ?>
 				endif;
 			?>
 		</section>
-		<section class="pagepad">
+		<section>
 		<?php if( have_rows('inset', 'option') ): ?>
 			<h2>Inset days</h2>
 			<p>(Directed teachers’ closure days)</p>

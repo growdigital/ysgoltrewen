@@ -7,10 +7,13 @@
 
 get_header(); ?>
 
-<main role="main">
+<?php while (have_posts()) : the_post(); ?>
+	<h1><?php the_title(); ?></h1>
+<?php endwhile; ?>
 
-	<section class="pagepad">
-		<h1><?php single_post_title(); ?></h1>
+<main class="main" role="main">
+
+	<section>
 		<?php
 			if( have_rows('member') ): ?>
 				<ul class="zero">
