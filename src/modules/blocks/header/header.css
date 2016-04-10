@@ -15,31 +15,31 @@
 }
 
 /* header logo 'size' is  width="130" height="125" */
-.header--logo {
+.header__logo {
 	display: inline-block;
 	width: 110px;
 }
 
-.header--logo:hover {
+.header__logo:hover {
 	opacity: 0.8;
 }
 
-.header--name {
+.header__name {
 	font-size: 2.3rem;
 	margin-bottom: 0.6rem;
 }
 
-.header--name a,
-.header--name a:visited {
+.header__name a,
+.header__name a:visited {
 	color: white;
 	text-decoration: none;
 }
 
-.header--name a:hover {
+.header__name a:hover {
 	text-decoration: underline;
 }
 
-.header--desc {
+.header__desc {
 	font-size: 1.1rem;
 	font-weight: normal;
 	line-height: 1.3;
