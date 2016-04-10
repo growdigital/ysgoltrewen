@@ -35,7 +35,7 @@ get_header(); ?>
 			<?php endif; ?>
 		</article>
 	<?php endwhile; ?>
-	<article class="article">
+	<article class="article indent">
 		<h2>Term dates</h2>
 		<?php
 			if( have_rows('term_dates', 'option') ):

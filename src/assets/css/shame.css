@@ -92,18 +92,22 @@ figcaption {
 	}
 
 	.container {
-		padding: 0 0.4rem 0 0.7rem;
+		/*padding: 0 0.4rem 0 0.7rem;*/
+		padding: 0 1% 0 1.6%;
 	}
 	.main {
 		border-bottom: none;
 		float: left;
-		padding-right: 1rem;
-		width: 70%;
+		/*padding-right: 1rem;*/
+		/*width: 70%;*/
+		padding-right: 2%;
+		width: 67%;
 		/*background: yellow;*/
 	}
 	.sidebar {
 		float: right;
-		width: 30%;
+		/*width: 30%;*/
+		width: 33%;
 		/*background: navajowhite;*/
 	}
 
@@ -150,6 +154,25 @@ figcaption {
 		margin: 0 0.3rem;
 	}
 
+
+}
+
+@media (--medium-large) {
+	.main {
+		width: 72%;
+	}
+
+	.sidebar {
+		width: 28%;
+	}
+
+}
+
+@media (--large) {
+	.container {
+		margin: 0 auto;
+		width: 63em;
+	}
 }
 
 /* not sure I want to use */
@@ -159,3 +182,6 @@ figcaption {
 }
 */
 
+	.indent {
+		padding: 1rem 3rem;
+	}

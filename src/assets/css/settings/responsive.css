@@ -3,6 +3,9 @@
    ========================================================================== */
 
 @custom-media --medium (width >= 45em);
+@custom-media --medium-large (width >= 55em);
+@custom-media --large (width >= 65em);
+
 
 /*
 // Define custom breakpoint sizes
