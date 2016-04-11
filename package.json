@@ -1,6 +1,6 @@
 {
 	"name": "ysgoltrewen-wp",
-	"version": "0.0.2",
+	"version": "0.0.4",
 	"description": "WordPress theme, based on Cornerstone",
 	"main": "index.php",
 	"devDependencies": {
