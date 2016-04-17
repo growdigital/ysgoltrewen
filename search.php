@@ -10,7 +10,7 @@ get_header(); ?>
 <main role="main">
 		<?php
 		if ( have_posts() ) : ?>
-				<h1><?php printf('Search Results for: %s', '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1><?php _e( 'Search results for', 'ysgoltrewen' ); ?>: <?php printf('%s', '<span>' . get_search_query() . '</span>' ); ?></h1>
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();

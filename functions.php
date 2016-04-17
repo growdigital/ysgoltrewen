@@ -125,6 +125,16 @@ if( function_exists('acf_add_options_page') ) {
 			'icon_url'		=> false,
 		));
 
+	acf_add_options_sub_page(array(
+			'page_title'	=> 'Footer',
+			'menu_title'	=> 'Footer',
+			'menu_slug'		=> 'global-footer',
+			'capability'	=> 'edit_posts',
+			'parent_slug'	=> 'global',
+			'position'		=> false,
+			'icon_url'		=> false,
+		));
+
 
 }
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying the dates page.
  * @link https://codex.wordpress.org/Template_Hierarchy
  * @package ysgoltrewen
  */
@@ -32,13 +32,13 @@ get_header(); ?>
 	<?php endwhile; ?>
 
 		<section>
-			<h2>Term dates</h2>
+			<h2><?php _e( 'Term dates', 'ysgoltrewen' ); ?></h2>
 			<?php
 				if( have_rows('term_dates', 'option') ):
 					while ( have_rows('term_dates', 'option') ) : the_row(); ?>
 						<h3><?php the_sub_field('term_name', 'option'); ?></h3>
 						<p><?php the_sub_field('term_start', 'option'); ?><br>
-						<strong>Half term: </strong><?php the_sub_field('half_term_start', 'option'); ?> – <?php the_sub_field('half_term_end', 'option'); ?><br>
+						<strong><?php _e( 'Half term', 'ysgoltrewen' ); ?>: </strong><?php the_sub_field('half_term_start', 'option'); ?> – <?php the_sub_field('half_term_end', 'option'); ?><br>
 						<?php the_sub_field('term_end', 'option'); ?></p>
 			<?php	endwhile;
 				else :
@@ -47,8 +47,8 @@ get_header(); ?>
 		</section>
 		<section>
 		<?php if( have_rows('inset', 'option') ): ?>
-			<h2>Inset days</h2>
-			<p>(Directed teachers’ closure days)</p>
+			<h2><?php _e( 'Inset days', 'ysgoltrewen' ); ?></h2>
+			<p>(<?php _e( 'Directed teachers’ closure days', 'ysgoltrewen' ); ?>)</p>
 			<ul>
 			<?php	while ( have_rows('inset', 'option') ) : the_row(); ?>
 					<li><?php the_sub_field('inset_date', 'option'); ?></li>

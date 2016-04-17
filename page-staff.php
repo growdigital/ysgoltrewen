@@ -20,7 +20,7 @@ get_header(); ?>
 				<?php while ( have_rows('member') ) : the_row(); ?>
 					<li class="media media--list">
 						<div class="media__body">
-							<img class="media__img" width="20%" src="<?php the_sub_field('photo'); ?>" alt="Photograph of <?php the_sub_field('name'); ?>" />
+							<img class="media__img" width="20%" src="<?php the_sub_field('photo'); ?>" alt="<?php _e( 'Photograph of', 'ysgoltrewen' ); ?> <?php the_sub_field('name'); ?>" />
 							<h2><?php the_sub_field('name'); ?></h2>
 							<h3><?php the_sub_field('title'); ?></h3>
 						</div>

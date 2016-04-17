@@ -1,5 +1,5 @@
 {
-	"name": "ysgoltrewen-wp",
+	"name": "ysgoltrewen",
 	"version": "0.0.4",
 	"description": "WordPress theme, based on Cornerstone",
 	"main": "index.php",
@@ -27,13 +27,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/growdigital/ysgoltrewen-wp"
+		"url": "https://github.com/growdigital/ysgoltrewen"
 	},
 	"author": "Jake Rayson",
 	"license": "GPLv3",
 	"private": "true",
 	"bugs": {
-		"url": "https://github.com/growdigital/ysgoltrewen-wp/issues"
+		"url": "https://github.com/growdigital/ysgoltrewen/issues"
 	},
-	"homepage": "https://github.com/growdigital/ysgoltrewen-wp"
+	"homepage": "https://github.com/growdigital/ysgoltrewen"
 }

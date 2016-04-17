@@ -7,9 +7,6 @@
 
 get_header(); ?>
 
-<h1 style="color:red;">Page template</h1>
-
-
 <main role="main">
 
 	<header>
