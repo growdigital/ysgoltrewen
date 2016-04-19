@@ -57,6 +57,16 @@ function theme_setup() {
 		'link',
 	) );
 
+	/*
+	 * Add internationlization
+	 * See http://code.tutsplus.com/articles/how-to-internationalize-wordpress-themes-and-plugins--wp-22779
+	 */
+	// Retrieve the directory for the internationalization files
+	// $lang_dir = get_template_directory() . '/lang');
+
+	// Set the theme's text domain using the unique identifier from above
+	// load_theme_textdomain('ysgoltrewen', $lang_dir);
+
 }
 endif;
 add_action( 'after_setup_theme', 'theme_setup' );

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ysgol Trewen Pot v1.0.0\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2016-04-16 20:43+0100\n"
+"POT-Creation-Date: 2016-04-16 20:46+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -29,13 +29,15 @@ msgstr ""
 
 #: 404.php:12
 msgid "That page can’t be found."
-msgstr ""
+msgstr "Ni ellir ddod o hyd i’r dudalen yna."
 
 #: 404.php:13
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
+"Ni ellir ddod o hyd i unrhywbeth yn y lleoliad hwn. Cliciwch ar un o’r "
+"liciau isod neu chwiliwch."
 
 #: comments.php:27
 #, php-format
@@ -49,36 +51,36 @@ msgstr[3] ""
 
 #: footer.php:12
 msgid "Address"
-msgstr ""
+msgstr "Cyfeiriad"
 
 #: footer.php:13
 msgid "Tel"
-msgstr ""
+msgstr "Rhif ffôn"
 
 #: header.php:22
 msgid "Ysgol Trewen logo"
-msgstr ""
+msgstr "logo Ysgol Trewen"
 
 #: page-dates.php:35
 msgid "Term dates"
-msgstr ""
+msgstr "Dyddiadau’r tymor"
 
 #: page-dates.php:41
 msgid "Half term"
-msgstr ""
+msgstr "Hanner tymor"
 
 #: page-dates.php:50
 msgid "Inset days"
-msgstr ""
+msgstr "Diwrnodau Hyfforddiant mewn Swydd (HMS)"
 
 #: page-dates.php:51
 msgid "Directed teachers’ closure days"
-msgstr ""
+msgstr "Diwrnodau gosod i athrawon"
 
 #: page-staff.php:23
 msgid "Photograph of"
-msgstr ""
+msgstr "Llun o"
 
 #: search.php:13
-msgid "Search results for:"
-msgstr ""
+msgid "Search results for"
+msgstr "Canlyniadau chwilio am"
