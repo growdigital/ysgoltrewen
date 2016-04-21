@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ysgol Trewen Pot v1.0.0\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2016-04-16 20:46+0100\n"
+"POT-Creation-Date: 2016-04-21 22:24+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -26,6 +26,8 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-1: dist\n"
 "X-Poedit-SearchPathExcluded-2: src\n"
 "X-Poedit-SearchPathExcluded-3: .\n"
+"X-Poedit-SearchPathExcluded-4: node_modules\n"
+"X-Poedit-SearchPathExcluded-5: lang\n"
 
 #: 404.php:12
 msgid "That page can’t be found."
@@ -53,9 +55,41 @@ msgstr[3] ""
 msgid "Address"
 msgstr "Cyfeiriad"
 
+#: footer.php:12
+msgid "Newcastle Emlyn"
+msgstr "Castell Newydd Emlyn"
+
 #: footer.php:13
 msgid "Tel"
 msgstr "Rhif ffôn"
+
+#: footer.php:14 functions.php:176
+msgid "Email"
+msgstr "Ebost"
+
+#: functions.php:171
+msgid "School details"
+msgstr "Manylion ysgol"
+
+#: functions.php:174
+msgid "Telephone"
+msgstr "Teleffon"
+
+#: functions.php:178
+msgid "Headteacher"
+msgstr "Prifathro"
+
+#: functions.php:180
+msgid "Language"
+msgstr "Iaith"
+
+#: functions.php:182
+msgid "Age range"
+msgstr "Ystod oedran"
+
+#: functions.php:184
+msgid "Number of pupils"
+msgstr "Nifer y disgyblion"
 
 #: header.php:22
 msgid "Ysgol Trewen logo"

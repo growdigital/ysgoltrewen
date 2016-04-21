@@ -59,27 +59,13 @@ function theme_setup() {
 
 	/*
 	 * Add internationlization
-	 * See http://code.tutsplus.com/articles/how-to-internationalize-wordpress-themes-and-plugins--wp-22779
+	 * See http://codex.wordpress.org/Function_Reference/load_theme_textdomain
 	 */
-	// Retrieve the directory for the internationalization files
-	// $lang_dir = get_template_directory() . '/lang');
-
-	// Set the theme's text domain using the unique identifier from above
-	// load_theme_textdomain('ysgoltrewen', $lang_dir);
+  load_theme_textdomain('ysgoltrewen', get_template_directory() . '/lang');
 
 }
 endif;
 add_action( 'after_setup_theme', 'theme_setup' );
-
-/**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- * Priority 0 to make it available to lower priority callbacks.
- * @global int $content_width
- */
-function ysgoltrewen_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'ysgoltrewen_content_width', 640 );
-}
-add_action( 'after_setup_theme', 'ysgoltrewen_content_width', 0 );
 
 /**
  * Register widget area.
@@ -97,6 +83,18 @@ function ysgoltrewen_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'ysgoltrewen_widgets_init' );
+
+/**
+ * Remove emoji from the header
+ */
+function disable_emoji_dequeue_script() {
+    wp_dequeue_script( 'emoji' );
+}
+add_action( 'wp_print_scripts', 'disable_emoji_dequeue_script', 100 );
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+
 
 /**
  * Add ACF global page
@@ -170,20 +168,20 @@ class school_widget extends WP_Widget {
 	 * Outputs widget content
 	 */
 	public function widget( $args, $instance ) {
-		echo '<h2>School details</h2>';
+		echo '<h2>' , _e( 'School details', 'ysgoltrewen' ) , '</h2>';
 		echo the_field('address', 'option');
 		echo '<dl class="deflist">';
-		echo '<dt>Telephone:</dt>';
+		echo '<dt>' , _e( 'Telephone', 'ysgoltrewen' )  , ':</dt>';
 		echo '<dd><a href="', the_field('tel_no', 'option') , '">' , the_field('tel_display', 'option') , '</a></dd><br>';
-		echo '<dt>Email:</dt>';
+		echo '<dt>' , _e( 'Email', 'ysgoltrewen' ) , ':</dt>';
 		echo '<dd><a href="mailto:', the_field('email', 'option') , '">' , the_field('email', 'option') , '</a></dd><br>';
-		echo '<dt>Headteacher:</dt>';
+		echo '<dt>' , _e( 'Headteacher', 'ysgoltrewen' ) , ':</dt>';
 		echo '<dd>' , the_field('head_teacher', 'option') , '</dd><br>';
-		echo '<dt>Language:</dt>';
+		echo '<dt>' , _e( 'Language', 'ysgoltrewen' ) , ':</dt>';
 		echo '<dd>' , the_field('language', 'option') , '</dd><br>';
-		echo '<dt>Age range:</dt>';
+		echo '<dt>' , _e( 'Age range', 'ysgoltrewen' ) , ':</dt>';
 		echo '<dd>' , the_field('age_range', 'option') , '</dd><br>';
-		echo '<dt>Number of pupils: </dt>';
+		echo '<dt>' , _e( 'Number of pupils', 'ysgoltrewen' ) , ': </dt>';
 		echo '<dd>' , the_field('number_pupils', 'option') , '</dd><br>';
 		echo '</dl>';
 	}
