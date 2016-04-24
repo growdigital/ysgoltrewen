@@ -27,6 +27,11 @@ function theme_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	/*
+	 * Add custom small image size
+	 */
+	add_image_size ( 'small', 480, 480, FALSE );
+
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'primary' => 'Primary',
