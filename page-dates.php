@@ -22,7 +22,10 @@ get_header(); ?>
 					$text = get_sub_field('text');
 					?>
 					<figure class="container__full">
-						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+						<img srcset="<?php echo $img_srcset; ?>"
+								 sizes="(min-width: 45em) 63.1vw, 100vw"
+								 src="<?php echo $image['sizes']['small']; ?>"
+								 alt="<?php echo $image['alt']; ?>">
 						<figcaption class="container__full-indent"><?php echo $caption; ?></figcaption>
 					</figure>
 					<?php echo $text; ?>
