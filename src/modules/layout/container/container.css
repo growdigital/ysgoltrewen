@@ -1,0 +1,54 @@
+/* ==========================================================================
+	 Container
+	 ========================================================================== */
+
+/**
+ * Container element for the whole page
+ */
+
+.container {
+	margin-bottom: 1.5rem;
+	padding: 0 0.7rem;
+}
+
+/* Full width item in container ie images on mobile */
+.container__full {
+	margin: 1.2rem -0.7rem 0.5rem;
+}
+
+/* No top margin for first figure in article */
+.container__full:first-child {
+	margin-top: 0;
+}
+
+/* Now, put the padding back on to those items requiring it ie captions */
+.container__full-indent {
+	padding: 0 0.7rem;
+}
+
+@media (--medium) {
+
+	.container {
+		padding: 0 1% 0 1.6%;
+	}
+
+	.container__full {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.container__full-indent {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+@media (--large) {
+
+	.container {
+		margin: 0 auto;
+		width: 63em;
+	}
+
+}

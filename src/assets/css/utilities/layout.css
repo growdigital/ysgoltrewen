@@ -42,3 +42,8 @@
 .u-floatright {
 	float: right !important;
 }
+
+.u-zero {
+	margin: 0;
+	padding: 0;
+}

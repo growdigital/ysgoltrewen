@@ -17,7 +17,7 @@
 img, embed, object, video {
   display: block;
   height: auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 .ie6 img {
@@ -60,6 +60,16 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, p, pre {
 /* Prevents border on linked image in IE */
 img {
   border: 0 solid transparent;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+figcaption {
+	font-style: italic;
+	margin: 0.5rem 0;
 }
 
 fieldset {

@@ -16,7 +16,7 @@ get_header(); ?>
 	<section>
 		<?php
 			if( have_rows('member') ): ?>
-				<ul class="zero">
+				<ul class="u-zero">
 				<?php while ( have_rows('member') ) : the_row(); ?>
 					<li class="media media--list">
 						<div class="media__body">

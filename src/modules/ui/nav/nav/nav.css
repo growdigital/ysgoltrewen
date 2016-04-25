@@ -34,3 +34,11 @@
 .nav .menu > * a:active {
 	color: var(--grey_dark);
 }
+
+@media (--medium) {
+
+	.nav {
+		padding-right: 6.2rem;
+	}
+
+}

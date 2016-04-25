@@ -1,0 +1,50 @@
+/* ==========================================================================
+	 Main
+	 ========================================================================== */
+
+/**
+ * The main chunk of content
+ */
+
+.main {
+	border-bottom: 1px solid rgb(215, 215, 215);
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+}
+
+/* Layout stuff */
+
+@media (--medium) {
+
+	.main {
+		border-bottom: none;
+		float: left;
+		padding-right: 2%;
+		width: 67%;
+	}
+
+	.sidebar {
+		float: right;
+		width: 33%;
+	}
+
+	.header {
+		align-items: center;
+		display: flex;
+		text-align: left;
+		justify-content: center;
+	}
+
+}
+
+@media (--medium-large) {
+
+	.main {
+		width: 72%;
+	}
+
+	.sidebar {
+		width: 28%;
+	}
+
+}

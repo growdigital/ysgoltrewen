@@ -35,3 +35,16 @@
 .footer__contact > * {
 	line-height: 2;
 }
+
+@media (--medium) {
+
+	.footer__contact {
+		padding: 1rem 6rem;
+	}
+
+	.footer__contact > * {
+		display: inline-block;
+		margin: 0 0.3rem;
+	}
+
+}

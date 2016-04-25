@@ -7,10 +7,29 @@
  * Inline pairs
  */
 
-.deflist dt {
-
+.deflist > * {
+	display: inline-block;
+	line-height: 1.8;
 }
 
-.deflist dd {
+.deflist dt {
+	font-style: italic;
+	margin-right: 0.5em;
+}
+
+@media (--medium) {
+
+	.deflist > * {
+		display: block;
+		line-height: 1.5;
+	}
+
+	.deflist dd {
+		margin-bottom: 0.5rem;
+	}
+
+	.deflist br {
+		display: none;
+	}
 
 }
