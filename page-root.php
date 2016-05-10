@@ -4,37 +4,30 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  * @package ysgoltrewen
  */
-
-get_header(); ?>
-
-<?php while (have_posts()) : the_post(); ?>
-	<h1><?php the_title(); ?></h1>
-<?php endwhile; ?>
-
-<main class="main" role="main">
-
-	<section>
-		<?php
-			if( have_rows('member') ): ?>
-				<ul class="u-zero">
-				<?php while ( have_rows('member') ) : the_row(); ?>
-					<li class="media media--list">
-						<div class="media__body">
-							<img class="media__img" width="20%" src="<?php the_sub_field('photo'); ?>" alt="<?php _e( 'Photograph of', 'ysgoltrewen' ); ?> <?php the_sub_field('name'); ?>" />
-							<h2><?php the_sub_field('name'); ?></h2>
-							<h3><?php the_sub_field('title'); ?></h3>
-						</div>
-					</li>
-				<?php	endwhile; ?>
-				</ul>
-			<?php else : endif; ?>
-	</section>
-</main>
-
-<?php
-get_sidebar();
-get_footer();
 ?>
+
+<?php get_template_part( 'partials/head' ); ?>
+
+	<header class="root__header">
+		<img src="<?php echo get_template_directory_uri (); ?>/dist/assets/img/logo.svg" alt="Ysgol Trewen logo">
+		<h1>Ysgol Gynradd <strong>Trewen</strong> Primary School</h1>
+	</header>
+
+	<main role="main">
+		<ul class="u-inline-child">
+			<li><a href="/cy/">Cymraeg</a></li>
+			<li><a href-"/en/">English</a></li>
+		</ul>
+	</main>
+
+	<footer class="root__footer" role="contentinfo">
+		<ul class="u-inline-child">
+			<li><a href="https://www.google.co.uk/maps/place/Cwm-cou,+Newcastle+Emlyn,+Ceredigion+SA38+9PE/@52.0488836,-4.4758037,14z/data=!4m2!3m1!1s0x486f2387f43fcef3:0x53ddfea870a93e59">Cwm Cou, SA38 9PE</a></li>
+			<li><a href="tel:<?php echo the_field('tel_no', 'option') ?>"><?php echo the_field('tel_display', 'option') ?></a></li>
+			<li><a href="mailto:<?php echo the_field('email', 'option') ?>"><?php echo the_field('email', 'option') ?></a></li>
+			<li><a href="https://twitter.com/<?php echo the_field('twitter', 'option') ?>">@<?php echo the_field('twitter', 'option') ?></a></li>
+		</ul>
+	</footer>
 
 <?php
 /*

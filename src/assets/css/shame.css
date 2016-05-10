@@ -7,3 +7,31 @@
  * http://csswizardry.com/2013/04/shame-css/
  */
 
+.root__header {
+	background-color: var(--red);
+}
+
+.root__header img {
+	width: 200px;
+}
+
+.root__header h1 {
+	color: white;
+}
+
+.root__header h1 strong {
+	font-weight: 600;
+}
+
+.root__footer {
+	background-color: var(--yellow);
+}
+
+.u-inline-child > * {
+	display: inline !important;
+	margin: 0 1rem;
+}
+
+.u-inline-child > *:after {
+  content: " \2022";
+}
