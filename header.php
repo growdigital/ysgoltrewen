@@ -14,18 +14,9 @@
 		<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/dist/assets/img/favicon.png">
 		<link type="text/plain" rel="author" href="<?php echo get_template_directory_uri(); ?>/dist/humans.txt">
-
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
-		<header class="header"><!-- site-header -->
-			<a class="header__logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri (); ?>/dist/assets/img/logo.svg" alt="<?php _e( 'Ysgol Trewen logo', 'ysgoltrewen' ); ?>"></a></h1>
-			<div>
-				<h1 class="header__name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 class="header__desc"><?php echo html_entity_decode(get_bloginfo('description'));?></h2>
-			</div>
-		</header>
-		<nav class="nav" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav>
+	<?php get_template_part( 'partials/header' ); ?>
+	<?php get_template_part( 'partials/nav' ); ?>
 		<div class="container"><!-- site-content -->
