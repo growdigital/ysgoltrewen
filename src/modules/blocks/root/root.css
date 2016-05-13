@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Root page
+   ========================================================================== */
+
+/**
+ * Styling specifically for WPML plugin root page (language choice page)
+ */
+
+.root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	text-align: center;
+}
+
+.root main {
+	flex: 1;
+}
+
+/* Root page link colors */
+
+.root a:link,
+.root a:visited {
+	color: var(--grey_text);
+	text-decoration: none;
+}
+
+.root a:hover,
+.root a:active {
+	text-decoration: underline;
+}
+
+.root a:active {
+	color: var(--link);
+}
+
+/* Root header */
+
+.root__header {
+	background-color: var(--red);
+	margin-bottom: 4rem;
+	padding: 2rem 0 1rem;
+}
+
+.root__header img {
+	display: inline-block;
+	margin-bottom: 1rem;
+	max-width: 200px;
+	width: 40%;
+}
+
+.root__header h1 {
+	color: white;
+}
+
+.root__header h1 strong {
+	font-weight: 600;
+}
+
+/* Root choice */
+
+.root__choice {
+	font-size: 1.7rem;
+	margin: 0;
+	padding: 0;
+}
+
+.root__choice > * {
+	display: inline-block;
+	line-height: 2;
+  margin: 0 1rem;
+  padding: 0;
+}
+
+/* Root footer */
+
+.root__footer {
+	background-color: var(--red);
+	padding-bottom: 2rem;
+}
+
+.root__footnav {
+	background-color: var(--yellow);
+	margin: 0;
+	padding: 1rem 1.5rem 1.3rem;
+}
+
+.root__footnav > * {
+	display: inline-block;
+	line-height: 1.8;
+	margin: 0 1rem;
+	padding: 0;
+}
+
