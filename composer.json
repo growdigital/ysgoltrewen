@@ -5,7 +5,7 @@
   "minimum-stability": "stable",
 	"keywords": ["WordPress", "theme"],
 	"license": "GPL-2.0+",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"authors":[
 		{
 			"name": "Jake Rayson",
