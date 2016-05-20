@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_57192d13a786f",
-            "label": "Term dates",
+            "label": "Dyddiadau'r tymor",
             "name": "term_dates",
             "type": "repeater",
             "instructions": "",
@@ -115,7 +115,7 @@
         },
         {
             "key": "field_57192d13a78f1",
-            "label": "Inset",
+            "label": "Mewnosodiad",
             "name": "inset",
             "type": "repeater",
             "instructions": "",
@@ -169,5 +169,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1461267766
+    "modified": 1463669293
 }

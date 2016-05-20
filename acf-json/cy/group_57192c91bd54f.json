@@ -22,7 +22,7 @@
         },
         {
             "key": "field_57192c91c8190",
-            "label": "Telephone display",
+            "label": "Ff\u00f4n arddangos",
             "name": "tel_display",
             "type": "text",
             "instructions": "",
@@ -43,7 +43,7 @@
         },
         {
             "key": "field_57192c91c823c",
-            "label": "Telephone number",
+            "label": "Ff\u00f4n rhif",
             "name": "tel_no",
             "type": "text",
             "instructions": "",
@@ -64,7 +64,7 @@
         },
         {
             "key": "field_57192c91c82e8",
-            "label": "Email",
+            "label": "Ebost",
             "name": "email",
             "type": "email",
             "instructions": "",
@@ -103,7 +103,7 @@
         },
         {
             "key": "field_57192c91c843f",
-            "label": "Head teacher",
+            "label": "Prifathro",
             "name": "head_teacher",
             "type": "text",
             "instructions": "",
@@ -124,7 +124,7 @@
         },
         {
             "key": "field_57192c91c84ea",
-            "label": "Language",
+            "label": "Iaith",
             "name": "language",
             "type": "text",
             "instructions": "",
@@ -145,7 +145,7 @@
         },
         {
             "key": "field_57192c91c8596",
-            "label": "Age range",
+            "label": "Ystod oedran",
             "name": "age_range",
             "type": "text",
             "instructions": "",
@@ -166,7 +166,7 @@
         },
         {
             "key": "field_57192c91c8641",
-            "label": "Number of pupils",
+            "label": "Nifer y disgyblion",
             "name": "number_pupils",
             "type": "number",
             "instructions": "",
@@ -205,5 +205,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1461269203
+    "modified": 1463668754
 }
