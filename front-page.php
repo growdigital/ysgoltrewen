@@ -41,13 +41,13 @@ get_header(); ?>
 		</article>
 	<?php endwhile; ?>
 	<article class="article indent">
-		<h2>Term dates</h2>
+		<h2><?php _e( 'Term dates', 'ysgoltrewen' ); ?></h2>
 		<?php
 			if( have_rows('term_dates', 'option') ):
 				while ( have_rows('term_dates', 'option') ) : the_row(); ?>
 					<h3><?php the_sub_field('term_name', 'option'); ?></h3>
 					<p><?php the_sub_field('term_start', 'option'); ?><br>
-					<strong>Half term: </strong><?php the_sub_field('half_term_start', 'option'); ?> – <?php the_sub_field('half_term_end', 'option'); ?><br>
+					<strong><?php _e( 'Half term', 'ysgoltrewen' ); ?>: </strong><?php the_sub_field('half_term_start', 'option'); ?> – <?php the_sub_field('half_term_end', 'option'); ?><br>
 					<?php the_sub_field('term_end', 'option'); ?></p>
 		<?php	endwhile;
 			else :

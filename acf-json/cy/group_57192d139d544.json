@@ -23,7 +23,7 @@
             "sub_fields": [
                 {
                     "key": "field_57192d13aa4b8",
-                    "label": "Term name",
+                    "label": "Enw tymor",
                     "name": "term_name",
                     "type": "text",
                     "instructions": "",
@@ -38,14 +38,13 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "formatting": "html",
                     "maxlength": "",
                     "readonly": 0,
                     "disabled": 0
                 },
                 {
                     "key": "field_57192d13aa574",
-                    "label": "Term start",
+                    "label": "Cychwyniad tymor",
                     "name": "term_start",
                     "type": "date_picker",
                     "instructions": "",
@@ -62,7 +61,7 @@
                 },
                 {
                     "key": "field_57192d13aa645",
-                    "label": "Half term start",
+                    "label": "Cychwyniad hanner tymor",
                     "name": "half_term_start",
                     "type": "date_picker",
                     "instructions": "",
@@ -79,7 +78,7 @@
                 },
                 {
                     "key": "field_57192d13aa705",
-                    "label": "Half term end",
+                    "label": "Diwedd hanner tymor",
                     "name": "half_term_end",
                     "type": "date_picker",
                     "instructions": "",
@@ -96,7 +95,7 @@
                 },
                 {
                     "key": "field_57192d13aa7c5",
-                    "label": "Term end",
+                    "label": "Diwedd tymor",
                     "name": "term_end",
                     "type": "date_picker",
                     "instructions": "",
@@ -134,7 +133,7 @@
             "sub_fields": [
                 {
                     "key": "field_57192d13bd519",
-                    "label": "Inset date",
+                    "label": "Diwrnodau Hyfforddiant mewn Swydd (HMS)",
                     "name": "inset_date",
                     "type": "date_picker",
                     "instructions": "",
@@ -169,5 +168,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1463669293
+    "modified": 1463781116
 }
