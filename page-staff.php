@@ -11,7 +11,7 @@ get_header(); ?>
 	<h1><?php the_title(); ?></h1>
 <?php endwhile; ?>
 
-<main class="main" role="main">
+<main class="main l-main" role="main">
 
 	<section>
 		<?php

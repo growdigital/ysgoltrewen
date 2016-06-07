@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Layout CSS
+   ========================================================================== */
+
+/**
+ * One place for the simple CSS layout
+ * Prefixed with an `l-`, like https://smacss.com/book/type-layout
+ */
+
+@media (--medium) {
+
+	.l-main {
+		float: left;
+		padding-right: 2%;
+		width: 67%;
+	}
+
+	.l-sidebar {
+		float: right;
+		width: 33%;
+	}
+
+	.l-header {
+		align-items: center;
+		display: flex;
+		text-align: left;
+		justify-content: center;
+	}
+
+}
+
+@media (--medium-large) {
+
+	.l-main {
+		width: 72%;
+	}
+
+	.l-sidebar {
+		width: 28%;
+	}
+
+}

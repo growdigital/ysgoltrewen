@@ -10,6 +10,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<aside class="sidebar pagepad" role="complementary">
+<aside class="sidebar l-sidebar" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside>
