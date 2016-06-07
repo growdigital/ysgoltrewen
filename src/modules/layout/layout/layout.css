@@ -20,7 +20,7 @@
 		width: 33%;
 	}
 
-	.l-header {
+	.flexbox .l-header {
 		align-items: center;
 		display: flex;
 		text-align: left;
