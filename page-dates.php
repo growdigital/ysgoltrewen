@@ -18,6 +18,7 @@ get_header(); ?>
 				<?php while( have_rows('image-text') ): the_row();
 					// vars
 					$image = get_sub_field('image');
+					$img_srcset = wp_get_attachment_image_srcset( $image['id'], 'full' );
 					$caption = get_sub_field('caption');
 					$text = get_sub_field('text');
 					?>
@@ -34,7 +35,7 @@ get_header(); ?>
 		</article>
 	<?php endwhile; ?>
 
-		<section>
+		<article class="article u-indent">
 			<h2><?php _e( 'Term dates', 'ysgoltrewen' ); ?></h2>
 			<?php
 				if( have_rows('term_dates', 'option') ):
@@ -47,8 +48,8 @@ get_header(); ?>
 				else :
 				endif;
 			?>
-		</section>
-		<section>
+		</article>
+		<article class="article u-indent">
 		<?php if( have_rows('inset', 'option') ): ?>
 			<h2><?php _e( 'Inset days', 'ysgoltrewen' ); ?></h2>
 			<p>(<?php _e( 'Directed teachers’ closure days', 'ysgoltrewen' ); ?>)</p>
@@ -61,7 +62,7 @@ get_header(); ?>
 			else :
 			endif;
 		?>
-		</section>
+		</article>
 
 </main>
 

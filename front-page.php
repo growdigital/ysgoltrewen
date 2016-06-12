@@ -40,7 +40,7 @@ get_header(); ?>
 			<?php endif; ?>
 		</article>
 	<?php endwhile; ?>
-	<article class="article indent">
+	<article class="article u-indent">
 		<h2><?php _e( 'Term dates', 'ysgoltrewen' ); ?></h2>
 		<?php
 			if( have_rows('term_dates', 'option') ):
