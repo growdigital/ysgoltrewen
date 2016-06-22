@@ -73,11 +73,11 @@ msgstr "Manylion ysgol"
 
 #: functions.php:174
 msgid "Telephone"
-msgstr "Teleffon"
+msgstr "Rhif ffôn"
 
 #: functions.php:178
 msgid "Headteacher"
-msgstr "Prifathro"
+msgstr "Pennaeth"
 
 #: functions.php:180
 msgid "Language"

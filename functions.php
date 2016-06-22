@@ -158,3 +158,9 @@ function ysgoltrewen_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ysgoltrewen_scripts' );
+
+add_action( 'admin_bar_menu', 'show_template' );
+	function show_template() {
+	global $template;
+	print_r( $template );
+}
